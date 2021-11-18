@@ -23,7 +23,7 @@ export default () => {
           <Suspense fallback={<LoadingBackdrop />}>
             <Switch>
               <Route path="/auth" component={AuthApp} />
-              <Route exact path="/" component={MarketingApp} />
+              <Route path="/" component={MarketingApp} />
             </Switch>
           </Suspense>
         </div>
