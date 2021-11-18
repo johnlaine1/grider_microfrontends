@@ -11,7 +11,6 @@ const generateClassName = createGenerateClassName({
   productionPrefix: 'AuthApp-',
 });
 
-// Added this comment to trigger a github workflow to run
 export default ({ history }) => {
   return (
     <div>

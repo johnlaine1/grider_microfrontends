@@ -19,11 +19,8 @@ export default () => {
         <div>
           <Header />
           <Switch>
+            <Route path="/auth" component={AuthApp} />
             <Route exact path="/" component={MarketingApp} />
-            <Route
-              path={['/auth/signin', '/auth/signup']}
-              component={AuthApp}
-            />
           </Switch>
           <MarketingApp />
         </div>
