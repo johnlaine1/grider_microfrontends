@@ -9,6 +9,7 @@ import LoadingBackdrop from './components/LoadingBackdrop';
 
 const MarketingApp = lazy(() => import('./components/MarketingApp'));
 const AuthApp = lazy(() => import('./components/AuthApp'));
+const DashboardApp = lazy(() => import('./components/DashboardApp'));
 
 const generateClassName = createGenerateClassName({
   productionPrefix: 'ContainerApp-',
@@ -30,6 +31,7 @@ export default () => {
               <Route path="/auth">
                 <AuthApp onSignIn={() => setIsSignedIn(true)} />
               </Route>
+              <Route path="/dashboard" component={DashboardApp} />
               <Route path="/" component={MarketingApp} />
             </Switch>
           </Suspense>
